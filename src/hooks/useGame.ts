@@ -1,6 +1,5 @@
 import useData from "./useData";
 import { Genre } from "./useGenres";
-import GameCard from "./../components/GameCard";
 import { GameQuery } from "../App";
 
 export interface Platform {
@@ -16,6 +15,7 @@ export interface Game {
   parent_platforms: { platform: Platform }[];
   metacritic: number;
   genres: Genre[];
+  rating_top: number;
 }
 
 const useGames = (gameQuery: GameQuery) =>

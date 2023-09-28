@@ -24,7 +24,7 @@ const GenreList = () => {
 
   return (
     <>
-      <Heading fontSize="2xl" marginBottom={3}>
+      <Heading fontSize="2xl" marginTop={9} marginBottom={3}>
         Genres
       </Heading>
       <List>
@@ -43,7 +43,7 @@ const GenreList = () => {
                 fontWeight={genre.id === genreId ? "bold" : "normal"}
                 onClick={() => setGenreId(genre.id)}
                 variant="link"
-                fontSize="lg"
+                fontSize="md"
               >
                 {genre.name}
               </Button>

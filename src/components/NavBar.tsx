@@ -6,9 +6,9 @@ import SearchInput from "./SearchInput";
 
 const NavBar = () => {
   return (
-    <HStack padding="5px">
+    <HStack padding="10px">
       <Link to="/">
-        <Image objectFit="cover" src={logo} boxSize="48px"></Image>
+        <Image src={logo} objectFit="cover" boxSize="60px"></Image>
       </Link>
       <SearchInput />
       <ColorModeSwitch />
